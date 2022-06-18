@@ -4,14 +4,12 @@
 #include <ctime>
 using namespace std;
 
-// shellsort implementation
 int shellSort(int A[], int N)
 {
     for (int gap = N / 2; gap > 0; gap /= 2)
     {
         for (int i = gap; i < N; i += 1)
         {
-            //sort sub lists created by applying gap 
             int temp = A[i];
 
             int j;
